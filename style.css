@@ -42,6 +42,12 @@ body{
     color:darkblue;
     font-weight: bold;
 }
+#container h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: lighter;
+    color: coral;
+    font-style: oblique;
+}
 span{
     font-style: italic;
     color: blueviolet;
