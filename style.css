@@ -109,6 +109,10 @@ footer {
         height:300px;
         width:400px;
     }    
+    #avii p{
+        font-size:large;
+    
+    }
 }
 
 /* Media Query for Laptops and Desktops */
@@ -117,6 +121,10 @@ footer {
         height:400px;
         width:500px;
     }    
+    #avii p{
+        font-size:large;
+    
+    }
 }
 
 /* Media Query for Large screens */
@@ -125,4 +133,8 @@ footer {
         height:400px;
         width:500px;
     } 
+    #avii p{
+        font-size:large;
+    
+    }
 }   
