@@ -44,7 +44,7 @@ body{
 }
 #container h2{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: lighter;
+    font-weight:lighter;
     color: coral;
     font-style: oblique;
 }
@@ -69,3 +69,60 @@ footer {
     bottom: 0;
     width: 100%;
 }
+@media only screen and (max-width:320px){
+    #avii img{
+    height:100px;
+    width:200px;
+}
+#avii p{
+    font-size:smaller ;
+
+}
+
+}
+@media only screen and (min-width: 321px) and (max-width:480px) {
+    #avii img{
+        height:200px;
+        width:300px;
+    }
+    #avii p{
+        font-size:small ;
+    
+    }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    #avii img{
+        height:200px;
+        width:300px;
+    }
+    #avii p{
+        font-size:medium ;
+    
+    }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #avii img{
+        height:300px;
+        width:400px;
+    }    
+}
+
+/* Media Query for Laptops and Desktops */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    #avii img{
+        height:400px;
+        width:500px;
+    }    
+}
+
+/* Media Query for Large screens */
+@media only screen and (min-width: 1281px) {
+    #avii img{
+        height:400px;
+        width:500px;
+    } 
+}   
