@@ -35,3 +35,49 @@ address{
     background-color: lightskyblue;
 }
 
+@media only screen and (max-width:320px){
+   address{
+    width: 80%;
+    font-size:medium;
+   }
+
+}
+@media only screen and (min-width: 321px) and (max-width:480px) {
+    address{
+        width: 60%;
+        font-size:medium;
+       }
+    
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    address{
+        width:60%;
+        font-size:medium;
+       }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    address{
+        width:40%;
+        font-size:large;
+       }
+}
+
+/* Media Query for Laptops and Desktops */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    address{
+        width: 40%;
+        font-size:larger;
+       }
+}
+
+/* Media Query for Large screens */
+@media only screen and (min-width: 1281px) {
+    address{
+        width: 40%;
+        font-size:larger;
+       }
+}   
