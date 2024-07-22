@@ -5,7 +5,7 @@ body{
 }
 #container{
     width:100%;
-    max-width: 100vw;
+    max-width:100vw;
     margin:auto;
     text-align: center;
     transition: transform .5s;
@@ -17,26 +17,29 @@ body{
     height: 70px;
     display:flex;
     align-items: center;
-    justify-content:space-between;
     margin-top:0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    
+
 }
-#hd a{
+#hd nav{
+    float:right;
     font-weight: bold;
     font-size: small;
     color:blue;
     cursor: pointer;
-    background: white;
     border-radius: 5px;
+    word-spacing:50px ;
+    
+}
+#hd nav a:hover{
+background-color:whitesmoke;
+border-radius: 5px;
+}
 
-}
-#hd button{
-    float:right;
-    border: none;
-    border-radius:90px;
-    color:blue;
-    background-color:greenyellow;
-    cursor: pointer;
-}
 #container h3{
     font-style: italic;
     color:darkblue;
@@ -52,23 +55,53 @@ span{
     font-style: italic;
     color: blueviolet;
 }
-#avii{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-footer {
-    background-color:blue;
-    color:white;
-    text-align: center;
-    font-size:x-small;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 10px;
-    position:relative;
-    bottom: 0;
-    width: 100%;
-}
+#container #arrange{
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap:50px;
+    
+        
+        }
+        #container #arrange #story{
+        width: 100%;
+            align-items: center;
+            text-align: center;
+            transition: transform .5s;            
+            background-color: #eeeee6;
+            padding:20px;
+            border-radius: 20px; 
+        }
+        #container #arrange #shareLink{
+        grid-template-areas: right;
+            align-items: center;
+            text-align: center;
+            transition: transform .5s;     
+            background-color: #eeeee6;
+            padding:20px;
+            border-radius: 20px;
+        }
+        #container #arrange #shareLink nav a{
+            color: blue;
+            font-size: small;
+            cursor: pointer;
+        }
+        #avii{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        footer {
+            background-color:blue;
+            color:white;
+            text-align: center;
+            font-size:x-small;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 10px;
+            position:relative;
+            bottom: 0;
+            width: 100%;
+        }
 @media only screen and (max-width:320px){
     #avii img{
     height:100px;
