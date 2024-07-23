@@ -89,7 +89,7 @@ span{
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 50%;
+            width: 60%;
         }
         footer {
             background-color:blue;
@@ -111,8 +111,15 @@ span{
     font-size:smaller ;
 
 }
+#avii blockquote{
+    font-size:smaller ;
 
 }
+#container #arrange{
+    grid-template-columns:repeat(1, 1fr);
+}
+}
+
 @media only screen and (min-width: 321px) and (max-width:480px) {
     #avii img{
         height:200px;
@@ -121,6 +128,13 @@ span{
     #avii p{
         font-size:small ;
     
+    }
+    #avii blockquote{
+        font-size:small;
+    
+    }
+    #container #arrange{
+        grid-template-columns:repeat(1, 1fr);
     }
 }
 
@@ -131,8 +145,15 @@ span{
         width:300px;
     }
     #avii p{
-        font-size:medium ;
+        font-size:medium;
     
+    }
+    #avii blockquote{
+        font-size:medium;
+    
+    }
+    #container #arrange{
+        grid-template-columns:repeat(1, 1fr);
     }
 }
 
@@ -143,7 +164,10 @@ span{
         width:400px;
     }    
     #avii p{
-        font-size:medium;
+        font-size:medium;    
+    }
+    #avii blockquote{
+        font-size:medium ;
     
     }
 }
@@ -158,6 +182,10 @@ span{
         font-size:large;
     
     }
+    #avii blockquote{
+        font-size:large;
+    
+    }
 }
 
 /* Media Query for Large screens */
@@ -167,6 +195,9 @@ span{
         width:500px;
     } 
     #avii p{
+        font-size:large;    
+    }
+    #avii blockquote{
         font-size:large;
     
     }
