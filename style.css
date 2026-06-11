@@ -1,341 +1,205 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body{
   font-family: "Poppins", sans-serif;
-  margin:auto;
+  margin:0;
+}
+#container{
+    width:100%;
+    max-width:100vw;
+    margin:auto;
+    text-align: center;
+    transition: transform .5s;
 }
 #hd{
     background-color:green;
-    background-image: url("./purpleflowers.avif");
+    background-image: url("./headerbackground.jpg");
     background-blend-mode:lighten;
-    width: 100%;
     height: 70px;
     display:flex;
     align-items: center;
     margin-top:0px;
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
-}
-#hd #mg{
-  width:10%;
-}
-#hd p{
-  width:50%;
-  text-align: center;
-}
-#hd #nv1{
-  width:20%;
-  margin-top:auto;
-    font-weight: bold;
-    font-size:large;
-    color:cornflowerblue;
-    cursor: pointer;
-    border-radius: 5px;
-    
-}
-#hd #nv2{
-  width:20%;
-  margin-top: auto;
-    font-weight: bold;
-    font-size:large;
-    color:cornflowerblue;
-    cursor: pointer;
-    border-radius: 5px;
-    
-}
+    justify-content: space-between;
 
-#hd a:hover{
-background-color:aqua;
+    
+
+}
+#hd nav a{
+    float:right;
+    margin-right:20px;
+    font-weight: bold;
+    font-size: small;
+    color:wheat;
+    cursor: pointer;
+    border-radius: 5px;
+    word-spacing: 1px;
+    
+}
+#hd nav a:hover{
+background-color:palevioletred;
 border-radius: 5px;
 }
 
-.box{
-  width:80%;
-  margin: auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  border: 2px solid;
-  border-radius: 20px;
-}
-.box img{
-    align-items: center;
-    margin-left:250px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  } 
-  .attic{
-    margin:auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-div p{
-    text-align: center;
-    width: 75%;
-    margin: auto;
-}
-div span{
-  color: blueviolet;
-}
-div h2{
-    text-align: center;
-}
-div h3{
-    text-align: center;
+#container h3{
     font-style: italic;
-    color: purple;
+    color:darkblue;
+    font-weight: bold;
 }
-div #myaudio{
-  text-align: center;
-  margin-left: 550px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-    align-items: center;
- justify-content: center;
+#container h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:lighter;
+    color: coral;
+    font-style: oblique;
 }
-.moral{
+span{
+    font-style: italic;
     color: blueviolet;
 }
-blockquote{
-    text-align: center;
-    color: blueviolet;
-}
- 
-footer {
-  background-color:purple;
-  color:white;
-  text-align: center;
-  font-size:x-small;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 10px;
-  position:relative;
-  bottom: 0;
-  width: 100%;
-}
+#container #arrange{
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap:50px;
+    
+        
+        }
+        #container #arrange #story{
+        width: 100%;
+            align-items: center;
+            text-align: center;
+            transition: transform .5s;            
+            background-color: #eeeee6;
+            padding:20px;
+            border-radius: 20px; 
+        }
+        #container #arrange #shareLink{
+        grid-template-areas: right;
+            align-items: center;
+            text-align: center;
+            transition: transform .5s;     
+            background-color: #eeeee6;
+            padding:20px;
+            border-radius: 20px;
+        }
+        #container #arrange #shareLink nav a{
+            color: blue;
+            font-size: small;
+            cursor: pointer;
+        }
+        #avii{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+        }
+        footer {
+            background-color:blue;
+            color:white;
+            text-align: center;
+            font-size:x-small;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 10px;
+            position:relative;
+            bottom: 0;
+            width: 100%;
+        }
 @media only screen and (max-width:320px){
-  div {
-      width: 100%;
-   }
-   
-
-  .box img{
-  margin-left: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  height:150px;
-  width:150px;
-  
+    #avii img{
+    height:100px;
+    width:150px;
 }
-div #myaudio{
-  margin: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-.box .attic{
-  margin:0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  height:200px;
-  width:200px
-  
-}
-div p{
-  font-size:smaller ;
+#avii p{
+    font-size:smaller ;
 
 }
-div  blockquote{
-  font-size:smaller ;
+#avii blockquote{
+    font-size:smaller ;
 
 }
-
+#container #arrange{
+    grid-template-columns:repeat(1, 1fr);
+}
 }
 
 @media only screen and (min-width: 321px) and (max-width:480px) {
-  div{
-      width:90%;
-  }
-  .box img{
-    margin-left:20px;
-    margin-top: 0px;
-  margin-bottom: 0px;
-      height:200px;
-      width:200px;
-     
-
-  }
-  .box #myaudio{
-    margin: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
- 
-
-.box .attic{
-margin:20x;
-margin-top: 0px;
-  margin-bottom: 0px;
-height:250px;
-width:250px
-
-}
-div p{
-font-size:small ;
-
-}
-div  blockquote{
-font-size:small ;
-
-}
+    #avii img{
+        height:200px;
+        width:200px;
+    }
+    #avii p{
+        font-size:small ;
+    
+    }
+    #avii blockquote{
+        font-size:small;
+    
+    }
+    #container #arrange{
+        grid-template-columns:repeat(1, 1fr);
+    }
 }
 
 /* Media Query for low resolution  Tablets, Ipads */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-  div{
-    width:90%;
-}
-.box img{
-  margin:50px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-    height: 300px;
-    width:300px;
-   
-
-}
-.box #myaudio{
-  margin: 100px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.box .attic{
-margin:50px;
-margin-top: 0px;
-  margin-bottom: 0px;
-height:350px;
-width:350px
-
-}
-div p{
-font-size:medium ;
-
-}
-div  blockquote{
-font-size:medium;
-
-}
- 
-
+    #avii img{
+        height:200px;
+        width:300px;
+    }
+    #avii p{
+        font-size:medium;
+    
+    }
+    #avii blockquote{
+        font-size:medium;
+    
+    }
+    #container #arrange{
+        grid-template-columns:repeat(1, 1fr);
+    }
 }
 
 /* Media Query for Tablets Ipads portrait mode */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  div{
-    width:90%;
-}
-.box img{
-  margin:100px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-    height: 400px;
-    width:400px;
-   
-
-}
-.box #myaudio{
-  margin: 200px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+    #avii img{
+        height:300px;
+        width:400px;
+    }    
+    #avii p{
+        font-size:medium;    
+    }
+    #avii blockquote{
+        font-size:medium ;
+    
+    }
 }
 
-.box .attic{
-margin:100px;
-margin-top: 0px;
-  margin-bottom: 0px;
-height:450px;
-width:450px
-
-}
-div p{
-font-size:medium ;
-
-}
-div  blockquote{
-font-size:medium;
-
-}
-} 
- 
 /* Media Query for Laptops and Desktops */
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
-  div{
-    width:90%;
-}
-div img{
-  margin:250px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-    height: 450px;
-    width:450px;
-   }
-   .box #myaudio{
-    margin: 300px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-  
-
-div .attic{
-margin:250px;
-margin-top: 0px;
-  margin-bottom: 0px;
-height:550px;
-width:550px
-
-}
-div p{
-font-size:large ;
-
-}
-div  blockquote{
-font-size:large;
-
-}
-  
+    #avii img{
+        height:400px;
+        width:500px;
+    }    
+    #avii p{
+        font-size:large;
+    
+    }
+    #avii blockquote{
+        font-size:large;
+    
+    }
 }
 
 /* Media Query for Large screens */
 @media only screen and (min-width: 1281px) {
-  div{
-    width:90%;
-}
-div img{
-  margin:250px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-    height: 600px;
-    width:600px;
-   }
-   .box #myaudio{
-    margin: 425px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-  
-
-div .attic{
-margin:250px;
-margin-top: 0px;
-  margin-bottom: 0px;
-height:700px;
-width:700px;
-
-}
-div p{
-font-size:large ;
-
-}
-div  blockquote{
-font-size:large;
-
-}
-}  
+    #avii img{
+        height:400px;
+        width:500px;
+    } 
+    #avii p{
+        font-size:large;    
+    }
+    #avii blockquote{
+        font-size:large;
+    
+    }
+}   
